@@ -10,10 +10,7 @@ with open('skills.html', 'r') as f:
     soup = BeautifulSoup(html, 'html.parser')
     # get the words list
     list = soup.find('ul', attrs={'class': 'plain list'})
-    
-    # iterate over the list, divide words to topics
-    # use a dictionary to store the words
-    
+        
     words = []
     
     for item in list.find_all('li'):
